@@ -1,1 +1,1 @@
-# geo_project
+# GeoSpartial_project
