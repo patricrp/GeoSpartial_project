@@ -8,8 +8,28 @@ Find the best location for your new business office. Consider your workers desir
 
 Solution:
 
-1. Filter the crunchbase database to look for startups that raised at least $1M. Get their lattitude and longitude for painting them on a map. 
-2. Taking into account that most of big cities around the world, have at least an airport, tran station and Starbucks, select 3 main cities around the world, to analyze them based on different criteria.
+1. Filter the crunchbase database to look for startups founded after 2003, accomplishing that 'Nobody in the company likes to have companies with more than 10 years in a radius of 2 KM.'
+Look where startups founded before 2003.
+
+There are 9.297 companies founded after 2003 and 3.839 founded before. There are 5.665 companies without founded year declared.
+
+2. Filter tech startups that raised more than $1M. Look for tech startups on the category_code and (despite the total raised money amount should be greated than $1M), I selected raised_amount greater or equal to 1000000 in a round. Later I'll try to aggreate data from all the funding_round. 
+
+3. Explode offices serie, as JSON, to different rows to see different offices of a company.
+
+4. Expand offices info into different series to have address, city, zip code, latitude and longitude separately.
+
+5. Cleaning the DataFrame dropping unnecessary columns and null values for latitude and longitude.
+
+6. Create a GEOJSON - type point to paint later a map with the offices.
+
+7. Transform de DataFrame into a GeoDataFrame
+
+8. Import Starbucks location dataset and create a DataFrame.
+
+9. Create a offices map with Starbucks markers  :(
+
+9. 
 
 
 
