@@ -29,7 +29,11 @@ There are 9.297 companies founded after 2003 and 3.839 founded before. There are
 
 9. Create a offices map with Starbucks markers  :(
 
-9. 
+10. Select 3 cities from the original DataFrame based on the number of value_counts of startups in the original DataFrame 
+
+11. Filter offices DataFrame, Starbucks DataFrame and offices founded before 2003 DataFrame with cities San Francisco, New York or Mountain View.
+
+11. Compare these 3 cities based on number of Starbucks, airports and proximity of startups founded before 2003 t  
 
 
 
