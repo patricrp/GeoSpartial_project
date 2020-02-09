@@ -15,23 +15,28 @@ There are 9.297 companies founded after 2003 and 3.839 founded before. There are
 
 2. Filter tech startups that raised more than $1M. Look for tech startups on the category_code and (despite the total raised money amount should be greated than $1M), I selected raised_amount greater or equal to 1000000 in a round. Later I'll try to aggreate data from all the funding_round. 
 
-3. Explode offices serie, as JSON, to different rows to see different offices of a company.
+3. Import Starbucks location dataset and create a DataFrame
 
-4. Expand offices info into different series to have address, city, zip code, latitude and longitude separately.
+4. Explode offices serie, as JSON, to different rows to see different offices of a company.
+
+5. Expand offices into different series to have address, city, zip code, latitude and longitude separately. Concatenate both DataFrames.
 
 5. Cleaning the DataFrame dropping unnecessary columns and null values for latitude and longitude.
 
-6. Create a GEOJSON - type point to paint later a map with the offices.
+6. Create a GEOJSON - type point.
 
 7. Transform de DataFrame into a GeoDataFrame
-
-8. Import Starbucks location dataset and create a DataFrame.
 
 9. Create a offices map with Starbucks markers  :(
 
 10. Select 3 cities from the original DataFrame based on the number of value_counts of startups in the original DataFrame 
 
 11. Filter offices DataFrame, Starbucks DataFrame and offices founded before 2003 DataFrame with cities San Francisco, New York or Mountain View.
+
+12. Create JSON to import to MongDB with GEO
+
+13. Create a DataFrame with offices to add nearest Starbucks and airports to each office. 
+
 
 11. Compare these 3 cities based on number of Starbucks, airports and proximity of startups founded before 2003 t  
 
